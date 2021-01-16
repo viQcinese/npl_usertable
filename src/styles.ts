@@ -1,13 +1,3 @@
-import styled, { createGlobalStyle } from 'styled-components';
-
-export const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box
-  }
-
-  body {
-    margin: 0;
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.div``;
