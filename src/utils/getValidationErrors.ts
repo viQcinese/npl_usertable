@@ -1,7 +1,6 @@
 import { ValidationError } from 'yup';
 
 interface Errors {
-  // Do lado esquerdo pode ser qualquer coisa, desde que seja uma string
   [key: string]: string;
 }
 

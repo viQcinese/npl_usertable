@@ -1,19 +1,17 @@
 import React from 'react';
 
-import UsersTable from '../../components/UsersTable';
+import Table from '../../components/Table';
 import Navbar from '../../components/Navbar';
 
-import { Container } from './styles';
+import Centralizer from '../../components/Centralizer';
 
-const AdminDashboard: React.FC = () => {
+const UsersTable: React.FC = () => {
   return (
-    <>
+    <Centralizer>
       <Navbar />
-      <Container>
-        <UsersTable />
-      </Container>
-    </>
+      <Table />
+    </Centralizer>
   );
 };
 
-export default AdminDashboard;
+export default UsersTable;

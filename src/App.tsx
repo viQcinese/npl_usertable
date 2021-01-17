@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Switch>
         <Route path="/" component={NewUser} exact />
-        <Route path="/admin" component={UsersTable} />
+        <Route path="/users" component={UsersTable} />
       </Switch>
     </BrowserRouter>
   );

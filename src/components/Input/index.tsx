@@ -18,14 +18,11 @@ const Input: React.FC<InputProps> = ({ name, text, label, ...rest }) => {
       name: fieldName,
       ref: inputRef.current,
       path: 'value',
-      setValue(ref: any, value: string) {
-        ref.setInputValue('oi');
-      },
       clearValue(ref: any) {
-        ref.setInputValue(' sd ');
+        ref.value = '';
       },
     });
-  }, [fieldName, registerField]);
+  }, [fieldName, registerField, inputRef]);
 
   return (
     <Container error={error} text={text}>

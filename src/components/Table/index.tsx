@@ -6,7 +6,7 @@ import columns from './dataColumns';
 
 import api from '../../services/api';
 
-const UsersTable: React.FC = () => {
+const Table: React.FC = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [totalRows] = useState(50);
@@ -56,4 +56,4 @@ const UsersTable: React.FC = () => {
   );
 };
 
-export default UsersTable;
+export default Table;

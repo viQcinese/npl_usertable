@@ -7,7 +7,6 @@ export default createGlobalStyle`
   }
 
   body {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;

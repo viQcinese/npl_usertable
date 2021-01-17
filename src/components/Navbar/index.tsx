@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <Link to="/" className={path === '/' || '' ? 'selected' : ''}>
         new user
       </Link>
-      <Link to="/admin" className={path === '/admin' ? 'selected' : ''}>
+      <Link to="/users" className={path === '/users' ? 'selected' : ''}>
         users table
       </Link>
     </Container>
