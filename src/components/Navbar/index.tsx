@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import { Container } from './styles';
+
 const Navbar: React.FC = () => {
   const location = useLocation();
   const path = location.pathname;
+
   return (
-    <>
-      <ul className="nav nav-tabs">
-        <li role="presentation" className={path === '/' || '' ? 'active' : ''}>
-          <Link to="/">SignUp Form</Link>
-        </li>
-        <li role="presentation" className={path === '/admin' ? 'active' : ''}>
-          <Link to="/admin">Admin Table</Link>
-        </li>
-      </ul>
-    </>
+    <Container>
+      <Link to="/" className={path === '/' || '' ? 'selected' : ''}>
+        signup
+      </Link>
+      <Link to="/admin" className={path === '/admin' ? 'selected' : ''}>
+        users table
+      </Link>
+    </Container>
   );
 };
 
