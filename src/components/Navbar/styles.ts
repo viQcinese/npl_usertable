@@ -13,6 +13,6 @@ export const Container = styled.div`
   }
 
   > .selected {
-    border-bottom: 1.4px solid #ddd;
+    border-bottom: 1.4px solid #ccc;
   }
 `;

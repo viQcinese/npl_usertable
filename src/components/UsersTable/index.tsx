@@ -9,10 +9,10 @@ import api from '../../services/api';
 const UsersTable: React.FC = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [totalRows, setTotalRows] = useState(50);
+  const [totalRows] = useState(50);
   const [perPage, setPerPage] = useState(10);
 
-  const fetchUsers = async (page: number) => {
+  const getUsers = async (page: number) => {
     setLoading(true);
 
     const response = await api.get(`/users?_page=${page}&_limit=${perPage}`);
@@ -22,7 +22,7 @@ const UsersTable: React.FC = () => {
   };
 
   const handlePageChange = (page: number) => {
-    fetchUsers(page);
+    getUsers(page);
   };
 
   const handlePerRowsChange = async (newPerPage: number, page: number) => {
@@ -36,7 +36,7 @@ const UsersTable: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchUsers(1);
+    getUsers(1);
   }, []);
 
   return (

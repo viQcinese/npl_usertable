@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 interface IContainerProps {
   error?: string;
+  text?: string;
 }
 
 export const Container = styled.div<IContainerProps>`
@@ -33,6 +34,18 @@ export const Container = styled.div<IContainerProps>`
     padding-left: 2px;
     font-size: 12px;
     text-align: right;
-    color: ${props => (props.error ? '#bd4e42' : 'transparent')};
+    color: transparent;
+
+    ${props =>
+      props.text &&
+      css`
+        color: #bbb;
+      `}
+
+    ${props =>
+      props.error !== undefined &&
+      css`
+        color: #bd4e42;
+      `}
   }
 `;

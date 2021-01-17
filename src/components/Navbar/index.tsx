@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <Container>
       <Link to="/" className={path === '/' || '' ? 'selected' : ''}>
-        signup
+        new user
       </Link>
       <Link to="/admin" className={path === '/admin' ? 'selected' : ''}>
         users table

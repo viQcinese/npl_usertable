@@ -24,6 +24,7 @@ export const tableStyles = {
   },
   headCells: {
     style: {
+      color: '#333',
       '&:not(:last-of-type)': {
         borderRightStyle: 'solid',
         borderRightWidth: '1px',
@@ -33,6 +34,7 @@ export const tableStyles = {
   },
   cells: {
     style: {
+      color: '#444',
       borderRightStyle: 'solid',
       borderRightWidth: '1px',
       borderRightColor: defaultThemes.default.divider.default,

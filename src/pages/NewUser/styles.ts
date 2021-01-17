@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 400px;
+  margin-top: 48px;
 
-  h1 {
-    font-size: 32px;
+  hr {
+    height: 0px;
+    border: 1px solid transparent;
+    margin: 32px 0;
   }
 `;

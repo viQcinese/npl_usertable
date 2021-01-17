@@ -2,7 +2,11 @@ import React from 'react';
 import { Container } from './styles';
 
 const Button: React.FC = ({ children }) => {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <button>{children}</button>
+    </Container>
+  );
 };
 
 export default Button;

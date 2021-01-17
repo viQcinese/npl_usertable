@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import SignUp from './pages/SignUp';
-import AdminDashboard from './pages/AdminDashboard';
+import UsersTable from './pages/UsersTable';
+import NewUser from './pages/NewUser';
 import GlobalStyle from './global';
 
 const App: React.FC = () => {
@@ -10,8 +10,8 @@ const App: React.FC = () => {
     <BrowserRouter>
       <GlobalStyle />
       <Switch>
-        <Route path="/" component={SignUp} exact />
-        <Route path="/admin" component={AdminDashboard} />
+        <Route path="/" component={NewUser} exact />
+        <Route path="/admin" component={UsersTable} />
       </Switch>
     </BrowserRouter>
   );
