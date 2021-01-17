@@ -16,4 +16,4 @@ Users data display table and entry formi, built with ReactJs and Typescript
 -  User can add add a new user to the table with form
 -  User can see a message if the form input is not valid
 -  Input mask on CPF/CNPJ fields
--  Address conversation to latitude and longitude coordinates with geolocation API
+-  Address conversion to geocordinates with geolocation API
