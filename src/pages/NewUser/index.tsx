@@ -86,7 +86,7 @@ const SignUp: React.FC = () => {
         const userData = { name, email, lat, lon } as any;
         userData[cpfOrCnpj] = cpf || cnpj;
 
-        await api.post('./users', data);
+        await api.post('./users', userData);
       }
 
       function clearForm() {

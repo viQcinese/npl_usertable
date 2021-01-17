@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import DataTable from 'react-data-table-component';
 import { tableStyles } from './styles';
 import columns from './dataColumns';
+import db from '../../db.json';
 
 import api from '../../services/api';
 
 const Table: React.FC = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [totalRows] = useState(50);
+  const [totalRows] = useState(db.users.length);
   const [perPage, setPerPage] = useState(10);
 
   const getUsers = async (page: number) => {
