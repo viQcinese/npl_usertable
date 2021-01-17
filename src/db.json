@@ -399,34 +399,6 @@
       "cpf": "37041143",
       "lat": "69.9594",
       "lon": "-127.7050"
-    },
-    {
-      "name": "VITOR S FURTADO",
-      "email": "vitor.senise@gmail.com",
-      "cpf": "111.111.111-11",
-      "street": "Rua Guapiaçu, 201",
-      "city": "São Paulo",
-      "state": "SP",
-      "code": "04024-020",
-      "id": 50
-    },
-    {
-      "name": "VITOR S FURTADO",
-      "email": "vitor.senise@gmail.com",
-      "cpf": "111.111.111-11",
-      "street": "Rua Guapiaçu, 201",
-      "city": "São Paulo",
-      "state": "SP",
-      "code": "04024-020",
-      "id": 51
-    },
-    {
-      "name": "VITOR S FURTADO",
-      "email": "vitor.senise@gmail.com",
-      "lat": -23.605574,
-      "lon": -46.648662,
-      "cpf": "111.111.111-11",
-      "id": 52
     }
   ]
 }
